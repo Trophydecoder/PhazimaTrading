@@ -1,5 +1,5 @@
 .ContainerMain{
-    background-image:url('/assets/Landing(Mobile).png');
+    background-image:url('/assets/landingPhazima.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 65vh;
@@ -20,26 +20,26 @@
 
 .text h1{
     margin-top: -7%;
-    font-family: var(--GlobalFont);
+    font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 40px;
 }
 .text h3{
     font-family: 'Sacramento', cursive;
-    color: var(--hotpink);
+    color:#a20000;
 }
 .text p{
     margin-top: -7%;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: var(--lightgrey);
+    color: rgb(122, 122, 122);
 }
 
 button{
-    padding: 13px 15px;
-    background-color: var(--hotpink);
+    padding: 13px 35px;
+    background-color:#a20000;
     border: none;
-    border-radius: 3px;
+    border-radius: 9px;
     color: white;
 }
 
@@ -52,12 +52,11 @@ button{
 
 @media screen and (min-width:1024px){
     .ContainerMain{
-        background-image:url('/assets/Landing(Desktop).png');
-        height: 100vh;
+        height: 85vh;
     } 
     .SectionContainer{
         width: 30%;
-        margin-left: 17%;
+        margin-left: 16%;
     }
 
 
@@ -67,11 +66,11 @@ button{
     }
     .text h1{
         margin-top: -4%;
-        font-size: 90px;
-        line-height: 95%;
+        font-size: 60px;
+     
     }
     .text p{
-        margin-top: -11%;
+        margin-top: -7%;
     }
     button{
         margin-top: 2%;
