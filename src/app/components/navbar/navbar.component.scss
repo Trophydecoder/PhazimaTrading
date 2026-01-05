@@ -40,13 +40,13 @@
   
   @media screen and (min-width: 1024px){
     .ContainerNavbar{
-     height: 10vh;
+     height: 13vh;
     }
     .barcontainer{
       display: none;
     }
     .logocontainer{
-      width: 30%;
+      width: 40%;
       padding-left: 15%;
       align-items: center;
       justify-content: center;
@@ -58,7 +58,7 @@
       margin-top: -3.20%;
     }
     .DesktopNav{
-      width: 50%;
+      width: 0%;
       flex-direction: row;
       display: flex;
       align-items: center;
@@ -72,20 +72,21 @@
       margin: 5%;
       text-wrap: nowrap;
       text-decoration: none;
-      color:var(--main);
+      color:rgb(83, 83, 83);
       font-family: poppins , sans-serif;
      }
      #Appointment{
-      background-color: var(--main); /* Green */
+      background-color: gray; /* Green */
       border: none;
       color: white;
-      padding: 15px 15px;
+      padding: 11px 13px;
+      border-radius: 18px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 14px;
       margin: 4px 2px;
       cursor: pointer;
-      border-radius: 12px;
+
      }
   }
