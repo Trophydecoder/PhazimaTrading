@@ -1,0 +1,61 @@
+.MainContainer{
+    background-image:url('/assets/CallusBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    margin-top: -13%;
+}
+.SectionContainer{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Callus h4{
+    font-size: 22px;
+    color: rgb(158, 158, 158);
+    font-family: 'Open Sans', sans-serif;
+}
+.Callus p{
+    margin-top: -7%;
+     font-size: 18px;
+     color: rgb(158, 158, 158);
+     font-family: 'Open Sans', sans-serif;
+}
+.Callus p span{
+    color:#ffffff;
+}
+#about{
+    width: 30%;
+    background-color:#0067a2;
+    border: none;
+    color: white;
+    padding: 11px 13px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+@media screen and (min-width:1024px){
+    .MainContainer{
+        height: 40vh;
+        margin-top: 3%;
+    }
+    .Callus h4{
+        font-size: 32px;
+    
+        font-family: 'Open Sans', sans-serif;
+   }
+   .Callus p {
+    margin-top: -8%;
+    font-size: 25px;
+   }
+   
+}
