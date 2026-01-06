@@ -1,0 +1,136 @@
+.ContainerForAll {
+    width: 100%;
+    height: 85vh;
+    font-family: 'Open Sans', sans-serif;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .SectionforAboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+    padding: 25px 14px;
+  }
+  
+  .SectionforImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #Aboutme {
+    display: none;
+    width: 300px;
+  }
+  
+  #Aboutme:hover {
+    transform: scale(1.05);
+  }
+  
+  .MyStory {
+    margin-top: -11%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    padding: 1rem 2rem;
+    text-align: justify;
+  }
+  
+  .MyStory h1 {
+    text-align: left;
+    font-size: 27px;
+    color:#0067a2;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+ 
+  
+  .MyStory h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: var(--MainColor);
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .MyStory p {
+    color: rgb(102, 102, 102);
+    font-size: 17px;
+    line-height: 1.7rem;
+    margin-top: -5%;
+    max-width: 600px;
+  
+  }
+  
+  .MyStory p span {
+    font-weight: bold;
+    color:#c7a900;
+  
+  }
+  #about{
+    width: 30%;
+    background-color:#c7a900;
+    border: none;
+    color: white;
+    padding: 11px 13px;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  //Responsive
+  @media screen and (min-width: 1024px) {
+    .SectionforImage {
+      flex-direction: row;
+      justify-content:center;
+      width: 85%;
+      display: flex;
+    }
+  
+    #Aboutme {
+      display: flex;
+      width: 390px;
+      border-radius: 12px;
+    }
+  
+    .MyStory {
+      text-align: left;
+      padding-left: 3rem;
+      margin-top: 0%;
+    }
+    .MyStory h1 {
+      text-align:justify;
+      font-size: 35px;
+    }
+  
+    .MyStory p {
+      font-size: 14px;
+      margin-top: -4%;
+    }
+   
+  }
+  
