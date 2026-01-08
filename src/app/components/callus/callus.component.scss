@@ -2,7 +2,7 @@
     background-image:url('/assets/CallusBG.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25vh;
+    height: 35vh;
     display: flex;
     align-items: center;
     margin-top: -13%;
@@ -45,7 +45,7 @@
   }
 @media screen and (min-width:1024px){
     .MainContainer{
-        height: 40vh;
+        height: 45vh;
         margin-top: 3%;
     }
     .Callus h4{

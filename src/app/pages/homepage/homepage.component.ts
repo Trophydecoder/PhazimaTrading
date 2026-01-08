@@ -4,10 +4,11 @@ import { LandingComponent } from "../../components/landing/landing.component";
 import { PromotionalpointsComponent } from "../../components/promotionalpoints/promotionalpoints.component";
 import { AboutusComponent } from "./../../components/aboutus/aboutus.component";
 import { CallusComponent } from "../../components/callus/callus.component";
+import { ServicesComponent } from "../../components/services/services.component";
 
 @Component({
   selector: 'app-homepage',
-  imports: [NavbarComponent, LandingComponent, PromotionalpointsComponent, AboutusComponent, CallusComponent],
+  imports: [NavbarComponent, LandingComponent, PromotionalpointsComponent, AboutusComponent, CallusComponent, ServicesComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
 })

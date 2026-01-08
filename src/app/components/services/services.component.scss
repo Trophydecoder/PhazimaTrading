@@ -1,0 +1,115 @@
+.ServiceContainer{
+    margin-top: 4%;
+    width: 100%;
+}
+.ServiceSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    text-align:left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Service{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.Service h3 {
+  font-size: 16px;
+  color: rgba(1, 13, 29, 0.801);
+}
+.Service  h3 span{
+    color:#0067a2;
+}
+
+
+#moreservice{
+    background-color:#c7a900;
+    border: none;
+    color: white;
+    padding: 11px 13px;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.ContainerMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.SectionContainer{
+    margin-top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.fa-solid{
+    border-radius: 7px;
+    padding: 25px 25px;
+    font-size: 30px;
+    background-color:#0067a2;;
+    color:#ffffff;
+}
+.Box{
+    width: 60%;
+    margin-top: 7%;
+    padding: 14px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
+}
+.Box:hover{
+    transform: scale(1.05);  
+}
+.Box h4{
+    font-size: 16px;
+    color: rgba(0, 24, 56, 0.801);
+}
+.Box p{
+    font-size: 13px;
+    color: grey;
+}
+
+@media screen and (min-width:1024px){
+    .ServiceContainer{
+        margin-top: 3%;
+    }
+    .SectionContainer{
+        width: 80%;
+        margin-top: 3%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Box{
+        width: 25%;
+        margin: 1%;
+        height: 29vh;
+    }
+    .Service{
+        display: flex;
+        width: 98%;
+    }
+    .Service h3 {
+        font-size: 32px;
+        color: rgba(1, 13, 29, 0.801);
+   
+    }
+      .Service  h3 span{
+          color:#0067a2;
+      }
+}
