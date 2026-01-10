@@ -1,61 +1,94 @@
 .MainContainer{
-    background-image:url('/assets/CallusBG.png');
+    background-image:
+      linear-gradient(
+        rgba(4, 20, 35, 0.92),
+        rgba(0, 48, 78, 0.92)
+      ),
+      url('/assets/CallusBG.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 35vh;
     display: flex;
     align-items: center;
     margin-top: -13%;
 }
-.SectionContainer{
 
+.SectionContainer{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+.Callus{
+    max-width: 720px;
+    padding: 36px 22px;
+}
+
 .Callus h4{
     font-size: 22px;
-    color: rgb(158, 158, 158);
+    color: #e3f2ff;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
 }
-.Callus p{
-    margin-top: -7%;
-     font-size: 18px;
-     color: rgb(158, 158, 158);
-     font-family: 'Open Sans', sans-serif;
-}
-.Callus p span{
-    color:#ffffff;
-}
-#about{
-    width: 30%;
-    background-color:#0067a2;
-    border: none;
-    color: white;
-    padding: 11px 13px;
 
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+.Callus p{
+    font-size: 18px;
+    color: #b7d9f5;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 26px;
+}
+
+.Callus p span{
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+#about{
+    width: 35%;
+    background: linear-gradient(135deg, #005b90, #0067a2, #1b8fd6);
+    border: none;
+    color: #ffffff;
+    padding: 13px 18px;
     font-size: 14px;
-    margin: 4px 2px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
     cursor: pointer;
-  }
+    border-radius: 8px;
+    box-shadow:
+      0 12px 28px rgba(0, 103, 162, 0.55),
+      inset 0 1px 0 rgba(255,255,255,0.12);
+    transition: all 0.35s ease;
+}
+
+#about:hover{
+    transform: translateY(-3px);
+    box-shadow:
+      0 18px 38px rgba(0, 103, 162, 0.65);
+    background: linear-gradient(135deg, #0067a2, #1b8fd6);
+}
+
 @media screen and (min-width:1024px){
     .MainContainer{
         height: 45vh;
         margin-top: 3%;
     }
+
     .Callus h4{
-        font-size: 32px;
-    
-        font-family: 'Open Sans', sans-serif;
-   }
-   .Callus p {
-    margin-top: -8%;
-    font-size: 25px;
-   }
-   
+        font-size: 26px;
+    }
+
+    .Callus p{
+        font-size: 23px;
+    }
+
+    #about{
+        font-size: 15px;
+        padding: 15px 20px;
+    }
 }

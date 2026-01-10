@@ -1,8 +1,8 @@
 .ServiceContainer{
-    margin-top: 4%;
     width: 100%;
 }
 .ServiceSection{
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
 
 
 #moreservice{
-    background-color:#c7a900;
+    background: linear-gradient(135deg, #8C6A13, #D4AF37);
     border: none;
     color: white;
     padding: 11px 13px;
@@ -62,9 +62,9 @@
 }
 .fa-solid{
     border-radius: 7px;
-    padding: 25px 25px;
+    padding: 15px 18px;
     font-size: 30px;
-    background-color:#0067a2;;
+    background: linear-gradient(135deg, #0B2E4E, #0F4C75);
     color:#ffffff;
 }
 .Box{
@@ -102,7 +102,7 @@
     }
     .Service{
         display: flex;
-        width: 98%;
+        width: 100%;
     }
     .Service h3 {
         font-size: 32px;
@@ -111,5 +111,8 @@
     }
       .Service  h3 span{
           color:#0067a2;
+      }
+      .fa-solid{
+        font-size: 25px;
       }
 }
