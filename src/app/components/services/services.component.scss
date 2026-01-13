@@ -64,10 +64,11 @@
     border-radius: 7px;
     padding: 15px 18px;
     font-size: 30px;
-    background: linear-gradient(135deg, #0B2E4E, #0F4C75);
+    background: linear-gradient(160deg, #004a78, #0067a2, #0b86c9);
     color:#ffffff;
 }
 .Box{
+    border-radius: 9px;
     width: 60%;
     margin-top: 7%;
     padding: 14px 15px;
@@ -78,7 +79,7 @@
 }
 .Box h4{
     font-size: 16px;
-    color: rgba(0, 24, 56, 0.801);
+    color: rgba(0, 0, 0, 0.801);
 }
 .Box p{
     font-size: 13px;
@@ -86,12 +87,17 @@
 }
 
 @media screen and (min-width:1024px){
+    .ServiceSection{
+        margin-top: 1%;
+    }
+
+    
     .ServiceContainer{
-        margin-top: 3%;
+        margin-top: 0%;
     }
     .SectionContainer{
         width: 80%;
-        margin-top: 3%;
+        margin-top: 2%;
         flex-direction: row;
         flex-wrap: wrap;
     }
