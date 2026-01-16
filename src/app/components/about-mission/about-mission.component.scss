@@ -1,145 +1,157 @@
+/* ================= TEXT ================= */
 .Containertext {
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
-    padding: 5px 0;
+    padding: 0px 0 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .text {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
-}
-
-/* TITLE */
-.text h2 {
-    font-size: 30px;
-
-    margin: 0;
-    color:#0067a2;
-}
-
-
-/* DESCRIPTION */
-.text p {
-    width:85%;
-    font-size: 17px;
-    line-height: 1.6;
-    color: #555;
-    margin: 0;
-}
-
-
-
-
-
-
-////////////////////////////STEPS///////////////////////////////////////////////
-.ContainerAboutMission {
-    width: 100%;
-    padding: 10px 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.SectionAboutMission {
-    width: 100%;
-    display: flex;
-    flex-direction: column; /* mobile */
-    align-items: center;
-    gap: 30px;
-}
-
-/* CIRCLE CARD */
-.Circle {
-    width: 250px;
-    height: 250px;               /* 🔑 makes it a circle */
-    border: none;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    display: flex;
-    flex-direction: column;
- 
-    align-items: center;
+    width: 70%;
     text-align: center;
 }
 
-/* NUMBER WITH IMAGE */
-.image-text {
-    font-size: 64px;
+.text h2 {
+    font-size: 36px;
     font-weight: 700;
+    color: #0067a2;
+    margin-bottom: 12px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* ================= PROCESS ================= */
+.ContainerAboutMission {
+    width: 100%;
+    
+    padding: 60px 0 100px;
+}
+
+.SectionAboutMission.process-line {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* STEP */
+.ProcessStep {
+    height:30vh;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    width: 220px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ICON + NUMBER */
+.IconWrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+/* NUMBER (YOUR STYLE) */
+.image-text {
+    position: absolute;
+    bottom: -14px;
+    right: -14px;
+    font-size: 26px;
+    font-weight: 800;
     background-image: url('/assets/aboutLanding.png');
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
     color: transparent;
-    line-height: 1;
 }
 
-/* TEXT */
-.Circle p {
-    color: grey;
-    font-size: 10px;
-    margin-top: -16%;
-    width: 80%;
+/* TITLES */
+.ProcessStep h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
 }
 
-/* DESKTOP */
-@media (min-width: 1024px) {
+/* DESCRIPTION */
+.ProcessStep p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* CONNECTING LINE */
+.Line {
+    flex: 1;
+    height: 1px;
+    background-color: #e2e2e2;
+    margin: 0 10px;
+}
+/* ICON */
+.icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #0067a2;
+}
+
+/* NUMBER (YOUR STYLE – UNTOUCHED) */
+.image-text {
+    position: absolute;
+    bottom: -14px;
+    right: -14px;
+    font-size: 26px;
+    font-weight: 800;
+    background-image: url('/assets/aboutLanding.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* ================= MOBILE ================= */
+@media (min-width:1200px) {
     .Containertext {
-        width: 100%;
-        font-family: 'Open Sans', sans-serif;
-        display: flex;
-        justify-content: center;
-        padding: 60px 0;
+
+        padding: 50px 0 40px;
+
     }
-    
-    .text {
-        width: 70%;
-        align-items: start;
-    }
-    .text h2{
-        font-size: 35px;
-    }
-
-.text p{
-    font-size: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .ContainerAboutMission {
-        
-        padding: 00px 0;
-    
-    }
-    .SectionAboutMission {
+    .SectionAboutMission.process-line {
+        width:73%;
         flex-direction: row;
-        justify-content: center;
+        gap: 40px;
     }
-    .Circle {
- margin: 3%;
 
-}
-    .Circle p {
-        font-size: 12px;
-       
+    .Line {
+        display: none;
     }
-    
+    /* STEP */
+.ProcessStep {
+    height:34vh;
+}
 }
