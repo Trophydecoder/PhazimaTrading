@@ -31,22 +31,25 @@
 .ContainerAboutMission {
     width: 100%;
     
-    padding: 60px 0 100px;
+    padding: 40px 0 100px;
 }
 
 .SectionAboutMission.process-line {
     width: 85%;
     margin: auto;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction:column;
 }
 
 /* STEP */
 .ProcessStep {
+    border-radius: 9px;
     height:30vh;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-    width: 220px;
+    width: 230px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
