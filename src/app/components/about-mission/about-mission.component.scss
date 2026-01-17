@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 0px 0 40px;
     font-family: 'Open Sans', sans-serif;
+    margin-top: -15%;
 }
 
 .text {
@@ -13,14 +14,15 @@
 }
 
 .text h2 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     color: #0067a2;
     margin-bottom: 12px;
 }
 
 .text p {
-    font-size: 16px;
+    text-align: justify;
+    font-size: 17px;
     color: #555;
     max-width: 700px;
     margin: auto;
@@ -31,7 +33,7 @@
 .ContainerAboutMission {
     width: 100%;
     
-    padding: 40px 0 100px;
+    padding: 0px 0 40px;
 }
 
 .SectionAboutMission.process-line {
@@ -140,8 +142,8 @@
 /* ================= MOBILE ================= */
 @media (min-width:1200px) {
     .Containertext {
-
-        padding: 50px 0 40px;
+        margin-top: 0;
+        padding: 70px 0 40px;
 
     }
     .SectionAboutMission.process-line {
@@ -152,6 +154,10 @@
 
     .Line {
         display: none;
+    }
+    .text p {
+        text-align: center;
+        font-size: 15px;
     }
     /* STEP */
 .ProcessStep {

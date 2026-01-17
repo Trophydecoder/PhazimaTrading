@@ -6,39 +6,36 @@
       ),url('/assets/aboutLanding.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 65vh;
+    height: 35vh;
     display: flex;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
     
 } 
 .SectionContainer{
     text-align:center;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-
 }
 
 
 .text{
-
+text-align: center;
 }
 
 .text h1{
-    margin-top: -5%;
+    margin-top: -15%;
     font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 35px;
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+
 }
 .text h3{
-    font-family: 'Sacramento', cursive;
-    color:#0067a2;
-}
-.text p{
-    margin-top: -7%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: rgb(122, 122, 122);
+    font-size: 35px;
+    color:#ffffff;
 }
 
 
@@ -60,7 +57,7 @@ button{
 
 @media screen and (min-width:1024px){
     .ContainerMain{
-        height: 75vh;
+        height: 65vh;
     } 
     .SectionContainer{
     
@@ -72,12 +69,12 @@ button{
 
 
     .text h3{
-        font-family: 'Sacramento', cursive;
-        font-size: 30px;
+
+        font-size: 45px;
     }
     .text h1{
-        margin-top: -4%;
-        font-size:40px;
+        margin-top: -19%;
+        font-size:20px;
      
     }
     .text p{
