@@ -1,93 +1,154 @@
-.ContainerNavbar{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .logocontainer{
-    width: 50%;
-  }
-  #logoIMG{
-    width: 50%;
-  }
-  .barcontainer{
-   width: 50%;
-  
-   justify-content: right;
-   display: flex;
-  }
-  .bars{
-    padding-right: 15%;
-    align-items: center;
-    display: flex;
-  }
-  .fa{
-    font-size: 15px;
-  }
-  
-  .navbar-slide {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: var(--main);
-    color:var(--textprimary );
-    transition: width 0.5s;
-    overflow-x: hidden;
-  }
-  .DesktopNav{
-   display: none;
-  }
-  
-  @media screen and (min-width: 1024px){
-    .ContainerNavbar{
-     height: 13vh;
-    }
-    .barcontainer{
-      display: none;
-    }
-    .logocontainer{
-      width: 40%;
-      padding-left: 15%;
-      align-items: center;
-      justify-content: center;
-      align-items: center;
-    }
-    #logoIMG{
-      width: 25%;
-      padding-left: 0%;
-      margin-top: -3.20%;
-    }
-    .DesktopNav{
-      width: 0%;
-      flex-direction: row;
-      display: flex;
-      align-items: center;
-      padding-left: 3%;
-     }
-     .Desktop{
-      flex-direction: row;
-      display: flex;
-     }
-     .Desktop a{
-      margin: 5%;
-      text-wrap: nowrap;
-      text-decoration: none;
-      color:rgb(83, 83, 83);
-      font-family: poppins , sans-serif;
-     }
-     #Appointment{
-      background: linear-gradient(135deg, #8C6A13, #D4AF37);
-      border: none;
-      color: white;
-      padding: 11px 13px;
-      border-radius: 18px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 14px;
-      margin: 4px 2px;
-      cursor: pointer;
+.ContainerNavbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0%;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-     }
+/* LOGO */
+.logocontainer {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+#logoIMG {
+  width: 140px;
+  transition: transform 0.3s ease;
+}
+
+#logoIMG:hover {
+  transform: scale(1.03);
+}
+
+/* MOBILE MENU */
+.barcontainer {
+  display: flex;
+  width:10%;
+  align-items: center;
+}
+
+.bars i {
+  font-size: 26px;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+/* SIDEBAR */
+.navbar-slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  color: white;
+  padding-top: 80px;
+  transition: width 0.4s ease;
+  overflow-x: hidden;
+  box-shadow: 6px 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-slide a {
+  display: block;
+  padding: 18px 32px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s, padding-left 0.3s;
+}
+
+.navbar-slide a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  padding-left: 40px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* DESKTOP NAV */
+.DesktopNav {
+  display: none;
+}
+
+.Desktop {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.Desktop a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  position: relative;
+}
+
+/* Elegant underline hover */
+.Desktop a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0067a2;
+  transition: width 0.3s ease;
+}
+
+.Desktop a:hover::after {
+  width: 100%;
+}
+
+/* CTA */
+#Appointment {
+  background: linear-gradient(135deg, #8C6A13, #D4AF37);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+}
+
+#Appointment::after {
+  display: none;
+}
+
+
+@media (min-width: 1024px) {
+  .logocontainer {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  
   }
+  .barcontainer {
+    display: none;
+  }
+
+  .DesktopNav {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .ContainerNavbar {
+    height: 13vh;
+  }
+}

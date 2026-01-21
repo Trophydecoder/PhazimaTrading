@@ -1,166 +1,145 @@
-/* ================= TEXT ================= */
-.Containertext {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0px 0 40px;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: -15%;
-}
-
-.text {
-    width: 70%;
+/* ================= PROCESS SECTION ================= */
+.process-section {
+    padding: 40px 0;
+    
+    background-color:rgba(128, 128, 128, 0.062);
+    font-family: 'Inter', 'Open Sans', sans-serif;
+  }
+  
+  /* ================= HEADER ================= */
+  .process-header {
+    max-width: 720px;
+    margin: 0 auto 70px;
     text-align: center;
-}
-
-.text h2 {
-    font-size: 30px;
-    font-weight: 700;
+  }
+  
+  .process-eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
     color: #0067a2;
     margin-bottom: 12px;
-}
-
-.text p {
-    text-align: justify;
-    font-size: 17px;
-    color: #555;
-    max-width: 700px;
-    margin: auto;
-    line-height: 1.7;
-}
-
-/* ================= PROCESS ================= */
-.ContainerAboutMission {
-    width: 100%;
-    
-    padding: 0px 0 40px;
-}
-
-.SectionAboutMission.process-line {
-    width: 85%;
-    margin: auto;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction:column;
-}
-
-/* STEP */
-.ProcessStep {
-    border-radius: 9px;
-    height:30vh;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-    width: 230px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* ICON + NUMBER */
-.IconWrap {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 18px;
-}
-
-.icon {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background-color: #f5f7fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-}
-
-/* NUMBER (YOUR STYLE) */
-.image-text {
-    position: absolute;
-    bottom: -14px;
-    right: -14px;
-    font-size: 26px;
-    font-weight: 800;
-    background-image: url('/assets/aboutLanding.png');
-    background-size: cover;
-    background-position: center;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-/* TITLES */
-.ProcessStep h4 {
+  }
+  
+  .process-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+  }
+  
+  .process-description {
     font-size: 16px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 6px;
-}
-
-/* DESCRIPTION */
-.ProcessStep p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-}
-
-/* CONNECTING LINE */
-.Line {
-    flex: 1;
-    height: 1px;
-    background-color: #e2e2e2;
-    margin: 0 10px;
-}
-/* ICON */
-.icon {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background-color: #f5f7fa;
+    line-height: 1.7;
+    color: #64748b;
+  }
+  
+  /* ================= TIMELINE ================= */
+  .process-timeline {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 0 20px;
+  }
+  
+  /* ================= CARD ================= */
+  .process-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px 26px;
+    box-shadow:
+      0 10px 30px rgba(15, 23, 42, 0.08),
+      0 1px 2px rgba(15, 23, 42, 0.04);
+    transition: all 0.35s ease;
+  }
+  
+  .process-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 18px 50px rgba(15, 23, 42, 0.12),
+      0 4px 6px rgba(15, 23, 42, 0.06);
+  }
+  
+  /* ================= CARD HEADER ================= */
+  .process-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  
+  .process-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
     color: #0067a2;
-}
-
-/* NUMBER (YOUR STYLE – UNTOUCHED) */
-.image-text {
-    position: absolute;
-    bottom: -14px;
-    right: -14px;
-    font-size: 26px;
+    font-size: 22px;
+  }
+  
+  .process-step-number {
+    font-size: 34px;
     font-weight: 800;
-    background-image: url('/assets/aboutLanding.png');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #0067a2, #38bdf8);
     -webkit-background-clip: text;
     color: transparent;
-}
+  }
+  
+  /* ================= BODY ================= */
+  .process-step-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #020617;
+    margin-bottom: 10px;
+  }
+  
+  .process-step-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #64748b;
+  }
+  
+  
 
-/* ================= MOBILE ================= */
-@media (min-width:1200px) {
-    .Containertext {
-        margin-top: 0;
-        padding: 70px 0 40px;
+  @media (min-width: 1024px) {
+    .process-section {
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .process-container {
+      width: 50%;
 
+      margin: 0 auto;
     }
-    .SectionAboutMission.process-line {
-        width:73%;
-        flex-direction: row;
-        gap: 40px;
+  
+    .process-header {
+      margin-bottom: 80px;
     }
-
-    .Line {
-        display: none;
+  
+    .process-title {
+      font-size: 38px;
     }
-    .text p {
-        text-align: center;
-        font-size: 15px;
+  
+    .process-timeline {
+      width: 80%;
+      justify-content: center;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 36px;
+      padding: 0;
     }
-    /* STEP */
-.ProcessStep {
-    height:34vh;
-}
-}
+  
+    .process-card {
+      padding: 06px 30px;
+    }
+  }
+  
